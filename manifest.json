@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Coding Timer",
+    "version": "1.0",
+    "description": "Track time spent on coding sites.",
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://codeforces.com/*", "*://codechef.com/*", "*://spoj.com/*", "*://hackerearth.com/*", "*://hackerrank.com/*", "*://topcoder.com/*", "*://uva.onlinejudge.org/*", "*://acm.timus.ru/*", "*://atcoder.jp/*", "*://www.geeksforgeeks.org/*", "*://leetcode.com/*", "*://cses.fi/*", "*://algoexpert.io/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    }
+  }
+  

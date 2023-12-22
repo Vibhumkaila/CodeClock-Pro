@@ -1,0 +1,26 @@
+#timer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: fit-content;
+    height: 40px;
+    /* background-color: #3498db; */
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+body{
+    width: fit-content;
+}
+  
+  #totalTime {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
